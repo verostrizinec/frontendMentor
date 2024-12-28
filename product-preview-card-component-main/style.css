@@ -1,0 +1,132 @@
+/* Estilos base para dispositivos móviles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 375px;
+  }
+  
+  #card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  #title {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: flex-start;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  #name-perfum {
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    margin: 0 20px 0 20px;
+  }
+  
+  #description {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+    margin: 10px 20px;
+    font-weight: 500;
+  }
+  
+  #prices {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+  
+  #price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  #secondary-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    margin-left: 20px;
+  }
+  
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 80%;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  button:hover {
+    background-color: hsl(158, 36%, 27%);
+  }
+  
+  button i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+  }
+
+  /* Media query para desktop */
+@media (min-width: 768px) {
+    #container {
+      display: flex;
+      flex-direction: row; /* Dispone la card en fila (lado a lado) */
+      max-width: 600px; /* Ajusta el ancho máximo */
+    }
+  
+    #card img {
+      width: 50%; /* La imagen ocupa la mitad de la card */
+      border-radius: 10px 0 0 10px; /* Ajusta el borde redondeado solo en la izquierda */
+    }
+  
+    #card {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    #content {
+      padding: 20px; /* Añade espacio alrededor del texto */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra el contenido verticalmente */
+      width: 50%; /* Ocupa la otra mitad de la card */
+    }
+  
+    #title,
+    #name-perfum,
+    #description,
+    #prices,
+    button {
+      margin-left: 0; /* Elimina los márgenes laterales en desktop */
+      margin-right: 0;
+    }
+  }
+  
